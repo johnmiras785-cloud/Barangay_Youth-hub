@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101126">
+  <title>Barangay Youth Hub</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101126;
+      color: white;
+    }
+    header {
+      padding: 25px 20px;
+      background: linear-gradient(135deg, #34206e, #175c91);
+      border-radius: 0 0 26px 26px;
+    }
+    header p { color: #dedcf8; }
+    main { padding: 20px; padding-bottom: 85px; }
+    .welcome { color: #b9b7d6; font-size: 14px; }
+    h1 { margin: 8px 0; font-size: 27px; }
+    h2 { font-size: 19px; margin-top: 27px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .card {
+      background: #1d1e39;
+      border: 1px solid #343553;
+      border-radius: 18px;
+      padding: 16px;
+      min-height: 125px;
+    }
+    .emoji { font-size: 27px; }
+    .card h3 { margin: 12px 0 6px; font-size: 16px; }
+    .card p { margin: 0; color: #c1c2d8; font-size: 13px; }
+    .announcement {
+      background: #202b48;
+      padding: 16px;
+      border-radius: 15px;
+      line-height: 1.5;
+    }
+    nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-around;
+      background: #191a30;
+      border-top: 1px solid #343553;
+      padding: 13px 5px;
+    }
+    nav a { color: #d4d3ed; text-decoration: none; font-size: 12px; }
+    footer { color: #a7a7c3; font-size: 12px; text-align: center; padding: 20px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>🏘️ BARANGAY YOUTH HUB</div>
+    <h1>Young people.<br>Stronger community.</h1>
+    <p>Your space for events, opportunities, and service.</p>
+  </header>
+
+  <main id="home">
+    <p class="welcome">WELCOME TO YOUR COMMUNITY</p>
+    <h2>Explore Programs</h2>
+
+    <div class="grid">
+      <a href="#events" class="card" style="color:inherit;text-decoration:none">
+        <div class="emoji">📅</div>
+        <h3>Youth Events</h3>
+        <p>Activities and schedules</p>
+      </a>
+      <a href="#scholarships" class="card" style="color:inherit;text-decoration:none">
+        <div class="emoji">🎓</div>
+        <h3>Scholarships</h3>
+        <p>Education opportunities</p>
+      </a>
+      <a href="#sports" class="card" style="color:inherit;text-decoration:none">
+        <div class="emoji">🏆</div>
+        <h3>Sports</h3>
+        <p>Games and tournaments</p>
+      </a>
+      <a href="#volunteer" class="card" style="color:inherit;text-decoration:none">
+        <div class="emoji">🤝</div>
+        <h3>Volunteer</h3>
+        <p>Help your community</p>
+      </a>
+    </div>
+
+    <h2 id="events">Youth Announcements</h2>
+    <div class="announcement">
+      <strong>📢 Welcome to Youth Hub!</strong>
+      <p>Community announcements and upcoming programs will appear here.</p>
+      <small>Sample announcement — not an official notice.</small>
+    </div>
+
+    <h2 id="scholarships">Scholarships</h2>
+    <div class="announcement">🎓 Scholarship information will be posted here.</div>
+
+    <h2 id="sports">Sports</h2>
+    <div class="announcement">🏀 Sports activities and schedules will appear here.</div>
+
+    <h2 id="volunteer">Volunteer Programs</h2>
+    <div class="announcement">🌱 Find ways to help your community here.</div>
+
+    <footer>Barangay Youth Hub · Youth for Community</footer>
+  </main>
+
+  <nav>
+    <a href="#home">🏠 Home</a>
+    <a href="#events">📅 Events</a>
+    <a href="#scholarships">🎓 Scholarships</a>
+    <a href="#volunteer">🤝 Volunteer</a>
+  </nav>
+</body>
+</html>
